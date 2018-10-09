@@ -1,0 +1,41 @@
+{
+  "name": "expense-tracker",
+  "version": "0.0.1",
+  "description": "An app to assist in keeping track of expenses for tax returns",
+  "main": "server.js",
+  "dependencies": {
+    "bcrypt": "^3.0.0",
+    "body-parser": "^1.18.3",
+    "dotenv": "6.0.0",
+    "es6-promisify": "^6.0.0",
+    "express": "^4.16.2",
+    "express-graphql": "^0.6.12",
+    "express-handlebars": "^3.0.0",
+    "graphql": "^14.0.2",
+    "html-to-text": "^4.0.0",
+    "jsonwebtoken": "^8.3.0",
+    "juice": "^4.3.2",
+    "md5": "^2.2.1",
+    "mongoose": "5.2.14",
+    "mongoose-mongodb-errors": "0.0.2",
+    "nodemailer": "^4.6.8",
+    "nodemon": "1.18.4",
+    "validator": "^10.7.1"
+  },
+  "devDependencies": {
+    "concurrently": "^3.5.0"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "client": "cd client && yarn start",
+    "server": "nodemon server.js",
+    "dev": "concurrently --kill-others-on-fail \"yarn server\" \"yarn client\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://martin_mccabe@bitbucket.org/martin_mccabe/expense-tracker.git"
+  },
+  "author": "MartinM",
+  "license": "ISC",
+  "homepage": "https://bitbucket.org/martin_mccabe/expense-tracker#readme"
+}

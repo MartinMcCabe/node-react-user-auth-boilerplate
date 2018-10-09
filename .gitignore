@@ -1,0 +1,8 @@
+node_modules/
+client/node_modules/
+.DS_Store
+*.log
+.idea
+haters/
+variables.env
+.history/
